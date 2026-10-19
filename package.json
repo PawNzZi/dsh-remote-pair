@@ -1,0 +1,35 @@
+{
+  "name": "dsh-remote-pair",
+  "version": "0.1.0",
+  "description": "DSH plugin: print a phone-pairing URL, serve a QR page, and bridge the loopback web server onto the LAN.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "pairing",
+    "qrcode",
+    "lan"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

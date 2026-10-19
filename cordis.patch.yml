@@ -1,0 +1,13 @@
+# 把 dsh-remote-pair 插入当前 profile 的插件树。
+# 安装包之后，把这一段加进 `~/.dsh/profiles/<profile>/cordis.patch.yml`；
+# 如果插件管理器已经帮你写好了，就不要重复添加（同一个 id 只能出现一次）。
+- insert:
+    - id: remote-pair
+      name: dsh-remote-pair
+      config:
+        enabled: true
+        host: 0.0.0.0
+        port: 8787
+        # 人在外面时，把花生壳 / frp / Tailscale 的公网地址填在这里，
+        # 二维码里就会使用它；留空则用局域网 IP。
+        publicUrl: ''

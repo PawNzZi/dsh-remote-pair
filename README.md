@@ -1,6 +1,6 @@
 # dsh-remote-pair
 
-给「DSH 遥控器」手机端生成**配对链接与二维码**的 DeepSeek Harness 插件。
+给「Helm·DSH」手机端生成**配对链接与二维码**的 DeepSeek Harness 插件。
 
 ## 为什么需要它
 
